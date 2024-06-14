@@ -1,0 +1,99 @@
+/* Basic styles */
+body {
+    font-family: "Lucida Console", Courier, monospace;
+    margin: 80px;
+    padding: 20px;
+    background-color: #99BC85;
+}
+
+.main-header {
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.intro-paragraph {
+    font-size: 1.2em;
+    color: #000000;
+    margin: 30px 0;
+    position: relative;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #000000;
+    background-color: #4F6F52;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #BFD8AF;
+}
+
+/* Pseudo-elements for header */
+.main-header::before,
+.main-header::after {
+    content: '⋆.˚𖦹⋆✮⋆.˚';
+    color: #3A4D39;
+    position: relative;
+}
+
+.main-header::before {
+    left: -25px;
+}
+
+.main-header::after {
+    right: -25px;
+}
+
+/* Pseudo-elements for paragraph */
+.intro-paragraph::before,
+.intro-paragraph::after {
+    content: '"';
+    color: #000000;
+    font-size: 1.5em;
+    position: relative;
+}
+
+.intro-paragraph::before {
+    left: -20px;
+}
+
+.intro-paragraph::after {
+    right: -20px;
+}
+
+/* Pseudo-elements for button */
+.cta-button::before,
+.cta-button::after {
+    content: '👉🏾';
+    font-size: 1.2em;
+    position: absolute;
+}
+.cta-button::after {
+    content: '👈🏾';
+    font-size: 1.2em;
+    position: absolute;
+
+}
+
+.cta-button::before {
+    left: -30px;
+}
+
+.cta-button::after {
+    right: -30px;
+}
+
